@@ -3,9 +3,9 @@ LABEL maintainer Chen, Wenli <chenwenli@chenwenli.com＞
 
 WORKDIR /usr/local/src
 RUN \
-  curl https://cmake.org/files/v3.8/cmake-3.8.1.tar.gz | tar zxvf -
+  curl https://cmake.org/files/v3.8/cmake-3.8.2.tar.gz | tar zxvf -
 RUN \
-  cd cmake-3.8.1 && \
+  cd cmake-3.8.2 && \
   mkdir build && cd build && \
   ../bootstrap --prefix=/usr/local && \
   make && make install && cd .. && rm -rf build
